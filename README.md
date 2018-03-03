@@ -1,7 +1,9 @@
 
 ## Author Ali Ghali
+----------------------------
 
-## React and Redux voting system 
+## React and Redux voting application
+-------------------------------------
 1- installition : 
 *first clone the repo to your local folder
 
@@ -10,7 +12,7 @@ you can use either npm or yarn
 
 3-run the react from cmd with command npm start 
 
-##How to run the application
+# How to run the application
 - make sure you installed the dependices,
 - go to localhost:3000 
 
