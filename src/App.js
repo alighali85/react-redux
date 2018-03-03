@@ -11,21 +11,24 @@ class App extends Component {
 
   handleVoteAngular = ()=>  {
     this.store.dispatch( voteAngular() );
+    console.log("APP component Angular= "+ this.store.getState().angular);
   }
 
   handleVoteReact = ()=>  {
     this.store.dispatch( voteReact() );
+    console.log( "APP component React= "+ this.store.getState().react);
   }
 
   handleVoteVuejs = ()=>  {
     this.store.dispatch( voteVuejs() );
+    console.log( "APP component Vuejs= "+ this.store.getState().vuejs);
   }
 
   render() {
     return (
       
     <div>
-        <div className='jumbotron' style={{ textAlign : 'center'}}>
+        <div className='jumbotron' style={{ textAlign : 'center', padding: '14px'}}>
           <img src='ctsw_logo.png' height='96'></img>
           <h2> what is your favorite front-end framework in 2018 ?</h2>
           <h4> click on the logo below to vote! </h4>
