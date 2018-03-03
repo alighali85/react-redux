@@ -24,12 +24,26 @@ class App extends Component {
     console.log( "APP component Vuejs= "+ this.store.getState().vuejs);
   }
 
+  //style logos
+  frameworkLogo() {
+    return {
+      cursor: 'pointer'
+    }
+  }
+
+  frameworkLogoHover() {
+    return {
+      cursor: 'pointer',
+      border: '2px solid red'
+    }
+  }
+
   render() {
     return (
       
     <div>
         <div className='jumbotron' style={{ textAlign : 'center', padding: '14px'}}>
-          <img src='ctsw_logo.png' height='96'></img>
+          <img src='ctsw_logo.png' height='96'></img><br/><br/>
           <h2> what is your favorite front-end framework in 2018 ?</h2>
           <h4> click on the logo below to vote! </h4>
           <br/>
@@ -37,17 +51,17 @@ class App extends Component {
           <div className='row text-center'>
           <div className='col-md-3'></div>
             <div className ='col-md-offset-3 col-md-2'>
-              <img src='angular_logo.png' height='96' onClick={ this.handleVoteAngular }>
+              <img className="frameworkLogo" src='angular_logo.png' height='96' onClick={ this.handleVoteAngular }>
               </img>
             </div>
 
             <div className ='col-xs-2 col-md-2'>
-              <img src='react_logo.png' height='96' onClick={ this.handleVoteReact }>
+              <img  className="frameworkLogo" src='react_logo.png' height='96' onClick={ this.handleVoteReact }>
               </img>
             </div>
 
             <div className ='col-xs-2 col-md-2'>
-              <img src='vue_logo.png' height='96' onClick={ this.handleVoteVuejs }>
+              <img className="frameworkLogo" src='vue_logo.png' height='86' onClick={ this.handleVoteVuejs }>
               </img>
             </div>
         </div>

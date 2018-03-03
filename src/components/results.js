@@ -65,21 +65,21 @@ class Results extends Component {
     render() {
         return (
             <div>
-                <span className="label label-danger"> Angular: {this.votesAngularInPercent().toFixed(2) +'%' }</span>
+                <span className="label label-danger badge-danger"> Angular: {this.votesAngularInPercent().toFixed(2) +'%' }</span>
                 <div className="progress stripted active">
-                    <div className="progress-bar progress-bar-danger" style={ this.angularPercentBar() }>
+                    <div className="progress-bar progress-bar-striped bg-danger" role="progressbar"  style={ this.angularPercentBar() }>
                     </div>
                 </div>
 
-                <span className="label label-info"> React: {this.votesReactInPercent().toFixed(2) + '%' }</span>
+                <span className="label label-info badge-info"> React: {this.votesReactInPercent().toFixed(2) + '%' }</span>
                 <div className="progress stripted active">
-                    <div className="progress-bar progress-bar-info" style={this.reactPercentBar() }>
+                    <div className="progress-bar progress-bar-striped bg-info" role="progressbar"  style={this.reactPercentBar() }>
                     </div>
                 </div>
 
-                <span className="label label-danger"> Vuejs: {this.votesVuejsInPercent().toFixed(2) + '%' }</span>
+                <span className="label label-danger badge-success"> Vuejs: {this.votesVuejsInPercent().toFixed(2) + '%' }</span>
                 <div className="progress progress-striped active">
-                    <div className="progress-bar progress-bar-success" style={ this.vuejsPercentBar() }>
+                    <div className="progress-bar progress-bar-striped bg-success" role="progressbar" style={ this.vuejsPercentBar() }>
                     </div>
                 </div>
             </div>
