@@ -1,16 +1,18 @@
-Auth: 
 
-#Ali Ghali
+## Author Ali Ghali
 
 ## React and Redux voting system 
-1- installitiong : 
-# first clone the repo to your local folder
-# then navigate to the folder and run npm install
+1- installition : 
+*first clone the repo to your local folder
+
+2- then navigate to the folder and run npm install
 you can use either npm or yarn 
 
-#run the react from cmd with command npm start 
+3-run the react from cmd with command npm start 
 
-#go to localhost:3000 
+##How to run the application
+- make sure you installed the dependices,
+- go to localhost:3000 
 
 # you should see the applicatioin runing.
 
