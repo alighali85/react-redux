@@ -1,5 +1,5 @@
 
-// create Initial staet to  statrt the application with 
+// create Initial state to statrt the application with 
 
 const initialState = {
     angular: 0,

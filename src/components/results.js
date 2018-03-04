@@ -57,11 +57,7 @@ class Results extends Component {
             width: this.votesVuejsInPercent() + '%'
         }
     }
-
-
-
-    
-    
+  
     render() {
         return (
             <div>

@@ -10,16 +10,14 @@ let store = createStore ( index );
 
 function render() {
     
-
-    ReactDOM.render(
+    ReactDOM.render (
         <div className='container'>
             <App store = { store }/>
             <hr/>
             <Results store= { store }/>
         </div>  
-    
     , 
-    document.getElementById('root'));
+    document.getElementById('root') );
 }
 
 store.subscribe( render )
